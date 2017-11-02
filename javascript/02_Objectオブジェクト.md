@@ -7,7 +7,7 @@
     * 文字列を返す
 * valueOf
     * 文字列以外の基本型の値が返される
-```
+```javascript
 var date = new Date();
 console.log(date.toString());  // "Tue Oct 31 2017 23:21:15 GMT+0900 (東京 (標準時))"
 console.log(date.valueOf());   // 1509459675816
@@ -15,7 +15,7 @@ console.log(date.valueOf());   // 1509459675816
 * assign(ES2015)
     * オブジェクトをマージする  
 `Object.assign(target, source, ...) // source：コピー元`
-```
+```javascript
 let pet = {
   type: 'ダックスフンド'
   , name: 'アレン'
@@ -43,7 +43,7 @@ var merged =  Object.assign(pet, pet2, pet3);
 * create
     * オブジェクトの生成。  
 `Object.create(proto [, props]) // protoは元となるオブジェクト`
-```
+```javascript
 var object= Object.create(Object.prototype, {
     x: {value: 1. writable: true, configurable: true, enumerable: true}
     , y: {value: 1. writable: true, configurable: true, enumerable: true}
@@ -66,7 +66,7 @@ var object= Object.create(Object.prototype, {
 |seal|×|×|〇|
 |freeze|×|×|×|
 
-```
+```javascript
 'use strict';
 var pet = {type: 'ダックスフンド', name: 'アレン'}
 // Object.preventExtensions(pet);
